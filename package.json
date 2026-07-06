@@ -32,11 +32,22 @@
     "typecheck": "tsc --noEmit"
   },
   "keywords": [
+    "http-forge",
+    "http forge",
     "http",
     "api",
     "testing",
+    "api testing",
+    "postman alternative",
+    "openapi",
+    "graphql",
+    "automation",
+    "ci",
+    "mcp",
     "playwright",
-    "forge",
+    "api client",
+    "typescript",
+    "test automation",
     "codegen",
     "runtime"
   ],
