@@ -1,6 +1,6 @@
 {
   "name": "@http-forge/playwright",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Runtime package for HTTP Forge generated Playwright API clients",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
