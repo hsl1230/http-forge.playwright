@@ -1,0 +1,54 @@
+{
+  "name": "@http-forge/playwright",
+  "version": "0.1.0",
+  "description": "Runtime package for HTTP Forge generated Playwright API clients",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    },
+    "./forge-env": {
+      "types": "./dist/forge-env.d.ts",
+      "import": "./dist/forge-env.mjs",
+      "require": "./dist/forge-env.js"
+    },
+    "./shared-types": {
+      "types": "./dist/shared-types.d.ts",
+      "import": "./dist/shared-types.mjs",
+      "require": "./dist/shared-types.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "node esbuild.config.js && tsc --emitDeclarationOnly",
+    "build:prod": "node esbuild.config.js --production",
+    "prepublishOnly": "npm run build:prod",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "http",
+    "api",
+    "testing",
+    "playwright",
+    "forge",
+    "codegen",
+    "runtime"
+  ],
+  "author": "",
+  "license": "MIT",
+  "peerDependencies": {
+    "@playwright/test": ">=1.40.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.40.0",
+    "@types/node": "^20.10.0",
+    "esbuild": "^0.19.0",
+    "typescript": "^5.3.0"
+  }
+}
